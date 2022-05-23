@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.corpo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    width: 100vw;
+    height: 100vh;
+    gap: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.cabecalho {
+    background-color: red;
+    min-width: 50px;
+    min-height: 50px;
+    grid-column: 1 / span 3;
+}
+
+.navegacao {
+    background-color: rgb(21, 255, 21);
+    min-width: 50px;
+    min-height: 50px;
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 3;
+}
+
+.principal {
+    background-color: blue;
+    min-width: 50px;
+    min-height: 50px;
+    grid-column: 2 / span 2;
+}
+
+.rodape {
+    background-color: yellow;
+    min-width: 50px;
+    min-height: 50px;
+    grid-column: 1 / span 3;
+    grid-row: 4 / span 1;
+}
